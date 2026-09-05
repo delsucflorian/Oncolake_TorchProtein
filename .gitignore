@@ -240,7 +240,8 @@ results/*
 !results/.gitkeep
 
 # --- OS / éditeurs ---
-.DS_Store              # macOS
+# macOS
+.DS_Store
 Thumbs.db              # Windows
 .vscode/
 .idea/
