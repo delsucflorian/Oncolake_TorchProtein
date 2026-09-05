@@ -216,3 +216,36 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- Données lourdes non versionnées (vivent sur Google Drive) ---
+data/alphafold/
+*.cif
+*.zip
+
+# --- Artefacts Colab / Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Modèles entraînés (à recréer via les notebooks, pas à committer) ---
+*.pt
+*.pth
+*.joblib
+*.pkl
+models/
+
+# --- Outputs de runs (figures, logs, résultats intermédiaires) ---
+# On garde results/ trackée mais on ignore les fichiers dedans par défaut,
+# sauf ceux qu'on explicitement ajoute avec `git add -f`
+results/*
+!results/.gitkeep
+
+# --- OS / éditeurs ---
+.DS_Store              # macOS
+Thumbs.db              # Windows
+.vscode/
+.idea/
+
+# --- Secrets (au cas où) ---
+.env
+*.key
+credentials.json
