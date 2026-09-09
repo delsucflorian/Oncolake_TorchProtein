@@ -104,4 +104,4 @@ Contact: delsuc.florian@gmail.com
 
 ## License
 
-MIT — see [LICENSE](LICENSE).  paralog leakage between train and test.
+MIT — see [LICENSE](LICENSE).
